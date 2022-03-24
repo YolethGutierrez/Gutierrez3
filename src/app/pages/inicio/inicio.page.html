@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--<ion-button routerLink="/presentacionpersonal">PRESENTACION PERSONAL</ion-button>
+  <ion-button routerLink="/lugardeorigen">LUGAR DE ORIGEN</ion-button>
+  <ion-button routerLink="/mismetaspersonales">MIS METAS PERSONALES</ion-button-->
+
+    <ion-list>
+      <ion-item *ngFor="let a of componentes"[routerLink]="a.redirectTo">
+        <ion-icon slot="start" [name]="a.icon"></ion-icon>
+        {{a.name}}
+      
+      </ion-item>
+      
+      
+    </ion-list>
+
+
+
+
+</ion-content>
